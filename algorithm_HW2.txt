@@ -1,0 +1,30 @@
+
+'''
+Given a string. Split it into two equal parts. Swap these parts and return the result.
+If the string has odd characters, the first part should be one character greater than the second part.
+Example: string = 'bbbbbcaaaaa'. Result = ‘aaaaabbbbbc’.
+
+'''
+
+str = 'Hello World'
+string = str.split()
+print(string)
+print(sorted(string, reverse=True))
+'''
+Given a string, determine if it consists of all unique characters.
+For example, the string 'abcde' has all unique characters and should return True.
+The string 'aabcde' contains duplicate characters and should return False.
+
+'''
+s = 'abcdaef'
+def unique(chars):
+
+
+    for x in chars:
+        if chars.count(x) !=1:
+            return False
+    return True
+
+
+print(unique(s))
+
